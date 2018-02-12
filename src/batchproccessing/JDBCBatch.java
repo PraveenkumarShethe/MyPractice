@@ -24,7 +24,7 @@ public class JDBCBatch {
             stmt = con.createStatement();
 
             long start = System.currentTimeMillis();
-            for(int i =0; i<100000;i++){
+            for(int i =0; i<10000;i++){
                 String query = "insert into Emoloyee values ("+i+",'Name"+i+"')";
                 stmt.addBatch(query);
 
